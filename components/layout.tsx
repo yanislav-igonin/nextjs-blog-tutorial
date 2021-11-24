@@ -7,8 +7,13 @@ import Link from 'next/link'
 const name = 'Ivan Milkman'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
-  return (
+export default function Layout({
+  children,
+  home
+}: {
+  children: React.ReactNode
+  home?: boolean
+}) {  return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
